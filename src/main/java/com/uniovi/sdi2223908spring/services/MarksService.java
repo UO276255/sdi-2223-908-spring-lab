@@ -30,4 +30,5 @@ public class MarksService {
     public void deleteMark(Long id) {
         marksRepository.deleteById(id);
     }
+
 }
