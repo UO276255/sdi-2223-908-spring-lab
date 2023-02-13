@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://thymeleaf.org">
+<head>
+  <title>Notaneitor</title>
+  <meta charset="utf-8"/>
+</head>
+<body>
+<div class="container">
+  <h1>List Thymeleaf</h1>
+  <div th:each="teacher : ${teacherList}">
+    <p>
+      <span th:text="${teacher.id}"></span>
+      <span th:text="${teacher.dni}"></span>
+      <span th:text="${teacher.nombre}"></span>
+      <span th:text="${teacher.apellido}"></span>
+      <span th:text="${teacher.categoria}"></span>
+      <a th:href="${'/teacher/details/' + teacher.id}">details</a>
+      <a th:href="${'/teacher/delete/' + teacher.id}">delete</a>
+    </p>
+  </div>
+  <div th:if="${#lists.isEmpty(teacherList)}">
+    No Teachers
+  </div>
+</div>
+</body>
+</html>

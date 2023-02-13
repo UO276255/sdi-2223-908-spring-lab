@@ -14,8 +14,8 @@ public class TeacherService {
     public void init() {
         teacherList.add(new Teacher(1L, "65782345Z", "Luis", "Rodriguez", "Biologia"));
         teacherList.add(new Teacher(2L, "23986124T", "Ana", "Suarez", "Matematicas"));
-        teacherList.add(new Teacher(3L, "12468723J", "Luis", "Rodriguez", "Biologia"));
-        teacherList.add(new Teacher(4L, "23986124T", "Ana", "Suarez", "Matematicas"));
+        teacherList.add(new Teacher(3L, "12468723J", "Jose", "Marquez", "Biologia"));
+        teacherList.add(new Teacher(4L, "23762001A", "Luisa", "Lopez", "Historia"));
     }
 
     public List<Teacher> getList() {
