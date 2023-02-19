@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.PostConstruct;
 import java.util.LinkedList;
 import java.util.List;
+
 @Service
 public class TeacherService {
     private List<Teacher> teacherList = new LinkedList<>();
